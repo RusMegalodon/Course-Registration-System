@@ -1,0 +1,359 @@
+FacID,DepID,CourseID,CourseName
+1,101,010113010,Electrical Circuit Theory
+1,101,010113011,Electrical Circuit Laboratory
+1,101,010113020,Electronics
+1,101,010113021,Electronics Laboratory
+1,101,010113023,Electromagnetic Theory
+1,101,010113025,Digital Circuit and Logic Design
+1,101,010113027,Microprocessors and Embedded Computer Systems
+1,101,010113031,Mathematics in Signal and System
+1,101,010113036,Railway Signaling System
+1,101,010113136,High Voltage Engineering
+1,101,010113140,Electrical Power Systems II
+1,101,010113141,Electrical Power System Laboratory
+1,101,010113142,Power Plant and Substation
+1,101,010113143,Power System Protection
+1,101,010113220,Electrical Measurement and Instrumentation
+1,101,010113221,Electromechanical Energy Conversion
+1,101,010113234,Control Engineering
+1,101,010113235,Advanced Control Systems
+1,101,010113335,Data Communications and Networking
+1,101,010113339,Antenna Engineering
+
+1,102,010013106,Systematic Engineering Design
+1,102,010013121,Engineering Mechanics
+1,102,010013222,Computer-aided Mechanical System Analysis
+1,102,010013321,Thermodynamics
+1,102,010013924,Mechanical Engineering Project II
+1,102,010013926,Engineering Seminar
+1,102,010023204,Automatic Control
+1,102,010023405,Aerodynamics
+1,102,010023407,Aircraft Design
+1,102,010023408,Aerospace Propulsions
+1,102,010023421,Computer-Aided for Aerospace System Analysis
+1,102,010023921,Aerospace Engineering Laboratory
+1,102,010023924,Aerospace Engineering Project II
+
+1,103,010913121,Maintenance Engineering
+1,103,010913132,Automation System
+1,103,010913231,Safety Engineering
+1,103,010913233,Human Factor Engineering in System Design
+1,103,010913330,Quality Control
+1,103,010913341,Quality Assurance
+1,103,010913537,Computer Simulation
+1,103,010913541,Value Engineering
+1,103,010913543,Inventory Control
+1,103,010913555,Application Microsoft Office in Industrial Engineering
+1,103,010913630,Industrial Plant Design
+1,103,010913644,Industrial Engineering Laboratory
+1,103,010913649,Process Analysis and Design for Productivity Improvement
+1,103,010913651,Industrial Engineering Project II
+
+1,104,010413316,Production Engineering
+1,104,010413317,Production Engineering Laboratory
+1,104,010413318,Robotics Engineering
+1,104,010413319,Robotics Engineering Laboratory
+1,104,010413320,Industrial Automation
+1,104,010413321,Industrial Automation Laboratory
+
+1,105,010513101,Logistics and Supply Chain Management
+1,105,010513102,Logistics and Industrial Engineering Laboratory
+1,105,010513107,Production Planning and Control
+1,105,010513109,Industrial Plant Layout and Design
+1,105,010513111,Logistics Engineering Project II
+1,105,010513112,Safety Engineering
+1,105,010513114,Maintenance Engineering
+1,105,010513115,Industrial Work Study
+1,105,010513116,Statistics for Data Science
+1,105,010513201,Conveying Engineering
+1,105,010513316,Risk Management
+1,105,010513319,Decision Analysis Model and Optimization
+1,105,010523104,Mechanics of Solids
+1,105,010523105,Computer Programming
+1,105,010523106,Engineering Mechanics
+1,105,010523107,Numerical Methods
+1,105,010523201,Engineering Dynamics
+1,105,010523205,Mechanics of Machinery
+1,105,010523207,Air Conditioning
+1,105,010523211,Mechanical Engineering Laboratory II
+1,105,010523214,Automatic Control
+1,105,010523301,Materials Handling System
+1,105,010523306,Pneumatic Conveying System
+1,105,010523312,Materials Handling Engineering Project II
+1,105,010523313,Dust Disposal and Exhaust System
+1,105,010523314,Materials Handling Engineering I
+1,105,010523420,Special Topics in Materials Handling Engineering I
+1,105,010523421,Special Topics in Materials Handling Engineering II
+1,105,010523426,Power Plant Engineering
+
+1,106,010623005,Computer Programming for Materials Engineering
+1,106,010623007,Mechanics of Materials
+1,106,010623102,Physical Metallurgy
+1,106,010623103,Laboratory on Physical Metallurgy
+1,106,010623106,Materials Electrochemistry
+1,106,010623108,Chemical Degradation of Materials
+1,106,010623109,Failure Analysis of Materials
+1,106,010623110,Materials Characterization
+1,106,010623111,Metal Forming
+1,106,010623112,Laboratory on Metal Forming
+1,106,010623115,Surface Engineering
+1,106,010623119,Non-Destructive Testing
+1,106,010623122,Materials Engineering Project II
+1,106,010623207,Welding Metallurgy
+1,106,010623208,Welding Metallurgy Laboratory
+1,106,010623211,Heat Treatment of Metals
+1,106,010623212,Laboratory on Heat Treatment of Metals
+1,106,010623213,Powder Metallurgy
+1,106,010623225,Fracture Mechanics of Materials
+1,106,010623226,Metallic and Other Inorganic Coating for Corrosion Prevention
+1,106,010623332,Polymer Matrix Composite Materials
+1,106,010623337,Rubber Technology
+1,106,010623342,Rubber Technology Laboratory
+1,106,010623522,Computer-aided Design
+1,106,010623602,Industrial Cost Analysis
+
+1,107,010813001,Surveying
+1,107,010813002,Surveying Laboratory
+1,107,010813103,Theory of Structures
+1,107,010813104,Structural Analysis
+1,107,010813108,Computer-aided Design in Civil Engineering
+1,107,010813109,Engineering Statics
+1,107,010813110,Strength of Materials
+1,107,010813203,Prestressed Concrete Design
+1,107,010813210,Reinforced Concrete Design
+1,107,010813211,Design of Timber and Steel Structures
+1,107,010813302,Soil Mechanics
+1,107,010813303,Soil Mechanics Laboratory
+1,107,010813306,Foundation Engineering
+1,107,010813403,Construction Engineering and Management
+1,107,010813502,Transportation Engineering
+1,107,010813602,Hydrology
+1,107,010813603,Hydraulic Engineering
+1,107,010813707,Building Sanitary Design
+1,107,010813807,Construction Materials
+1,107,010813905,Numerical Methods in Civil Engineering
+1,107,010813909,Computer Programming
+
+1,108,010711106,Digital and Microcontroller
+1,108,010723016,Microcontroller and Digital Circuit Laboratory
+1,108,010723018,Instrumentation and Process Control Laboratory
+1,108,010723130,Mechanics for Instrumentation and Automation Engineering
+1,108,010723131,Thermal Sciences and Fluid Mechanics
+1,108,010723231,Control Valve and Actuator
+1,108,010723232,Data Communication and Networking in Instrumentation
+1,108,010723233,Programmable Logic Control
+1,108,010723234,Instrumentation and Process Control
+1,108,010723235,Process Automation Design and Safety Instrument System
+1,108,010723431,Numerical Method
+1,108,010723532,Instrumentation and Automation Engineering Project II
+
+1,109,010313101,Physico-chemical Principles for Chemical Engineers
+1,109,010313102,Physico-chemical Laboratory for Chemical Engineers
+1,109,010313103,Mathematics for Chemical Engineers
+1,109,010313106,Fluid Mechanics for Chemical Engineers
+1,109,010313107,Chemical Engineering Thermodynamics I
+1,109,010313116,Engineering Drawing for Chemical Engineers
+1,109,010313202,Environmental Technology
+1,109,010313304,Chemical Engineering Unit Operation
+1,109,010313305,Chemical Engineering Unit Operation Laboratory
+1,109,010313306,Chemical Reaction Engineering and Reactor Design
+1,109,010313307,Process Equipment Design
+1,109,010313528,Industry and Green Technology
+1,109,010313552,Computer Applications in Chemical Engineering II
+
+2,201,020013101,Mechanical Engineering Technology
+2,201,020013102,Engineering Mechanics
+2,201,020013103,Engineering Drawing
+2,201,020013201,Machine Design
+2,201,020013301,Teaching Practice in Mechanical Engineering
+
+2,202,020113101,Electrical Engineering Technology
+2,202,020113201,Electrical Machines
+2,202,020113301,Electrical Measurement
+2,202,020113401,Electrical Engineering Laboratory
+2,202,020113501,Teaching Practice in Electrical Engineering
+
+2,203,020213101,Civil Engineering Technology
+2,203,020213201,Structural Analysis
+2,203,020213301,Construction Engineering
+2,203,020213401,Surveying
+2,203,020213501,Teaching Practice in Civil Engineering
+
+2,204,020313101,Computer Programming
+2,204,020313201,Computer Architecture
+2,204,020313301,Database Systems
+2,204,020313401,Computer Network
+2,204,020313501,Teaching Practice in Computer Education
+
+2,205,020413101,Technology Education
+2,205,020413201,Industrial Technology
+2,205,020413301,Technology and Society
+2,205,020413401,Technology Project
+
+2,206,020513101,Technical Education Management
+2,206,020513201,Educational Administration
+2,206,020513301,Technical Education Policy
+2,206,020513401,Technical Education Project
+
+3,301,030113101,Mechanical Engineering Technology
+3,301,030113201,Fluid Mechanics
+3,301,030113301,Thermal Engineering
+3,301,030113401,Machine Design
+
+3,302,030213101,Electrical Engineering Technology
+3,302,030213201,Electrical Circuits
+3,302,030213301,Electrical Machines
+3,302,030213401,Power Electronics
+
+3,303,030313101,Civil and Environmental Engineering Technology
+3,303,030313201,Construction Materials
+3,303,030313301,Structural Analysis
+3,303,030313401,Environmental Engineering
+
+3,304,030413101,Applied Science
+3,304,030413201,Applied Mathematics
+3,304,030413301,Physics
+3,304,030413401,Social Science
+
+3,305,030513101,Industrial Engineering Technology
+3,305,030513201,Production Planning
+3,305,030513301,Quality Control
+3,305,030513401,Industrial Automation
+
+3,306,030613101,Power Engineering Technology
+3,306,030613201,Power Plant Engineering
+3,306,030613301,Thermal Power Engineering
+3,306,030613401,Energy Management
+
+3,307,030713101,Electronic Engineering Technology
+3,307,030713201,Electronic Circuits
+3,307,030713301,Digital Electronics
+3,307,030713401,Embedded Systems
+
+3,308,030813101,Production Technology Management
+3,308,030813201,Information Technology for Production
+3,308,030813301,Production Information Systems
+3,308,030813401,Technology Management
+
+3,309,030913101,Welding Engineering Technology
+3,309,030913201,Welding Processes
+3,309,030913301,Welding Metallurgy
+3,309,030913401,Welding Inspection
+
+3,310,031013101,Pre-Engineering Mathematics
+3,310,031013201,Pre-Engineering Physics
+3,310,031013301,Pre-Engineering Chemistry
+3,310,031013401,Engineering Drawing
+
+4,401,040113101,Calculus I
+4,401,040113201,Calculus II
+4,401,040113301,Linear Algebra
+4,401,040113401,Mathematical Statistics
+
+4,402,040213101,Industrial Chemistry
+4,402,040213201,Organic Chemistry
+4,402,040213301,Physical Chemistry
+4,402,040213401,Analytical Chemistry
+
+4,403,040313101,General Biology
+4,403,040313201,Microbiology
+4,403,040313301,Genetics
+4,403,040313401,Biotechnology
+
+4,404,040413101,Food Science
+4,404,040413201,Food Processing
+4,404,040413301,Environmental Science
+4,404,040413401,Agro-Industrial Technology
+
+4,405,040513101,Industrial Physics
+4,405,040513201,Medical Instrumentation
+4,405,040513301,Instrumentation Physics
+
+4,406,040613101,Computer Programming
+4,406,040613201,Data Structures
+4,406,040613301,Database Systems
+4,406,040613401,Computer Networks
+
+4,407,040713101,Applied Statistics
+4,407,040713201,Statistical Methods
+4,407,040713301,Regression Analysis
+4,407,040713401,Data Analysis
+
+5,501,050113101,Industrial Business Development
+5,501,050113201,Human Resource Development
+5,501,050113301,Organizational Development
+5,501,050113401,Industrial Business Management
+
+5,502,050213101,Manufacturing Management
+5,502,050213201,Service Industry Management
+5,502,050213301,Operations Management
+5,502,050213401,Production Management
+
+6,601,060113101,English
+6,601,060113201,Thai Language
+6,601,060113301,Foreign Language
+
+6,602,060213101,Introduction to Humanities
+6,602,060213201,Philosophy
+6,602,060213301,Cultural Studies
+
+6,603,060313101,Introduction to Social Sciences
+6,603,060313201,Sociology
+6,603,060313301,Psychology
+
+7,701,070113101,Introduction to Information Technology
+7,701,070113201,Programming Fundamentals
+7,701,070113301,Data Structures and Algorithms
+7,701,070113401,Database Systems
+7,701,070113501,Software Engineering
+
+7,702,070213101,Information Technology Management
+7,702,070213201,Information Systems Analysis and Design
+7,702,070213301,IT Project Management
+7,702,070213401,Enterprise Information Systems
+
+7,703,070313101,Computer Networks
+7,703,070313201,Network Administration
+7,703,070313301,Information Security
+7,703,070313401,Cybersecurity
+
+8,801,110123301,Drawing I
+8,801,110123303,Fundamental Arts
+8,801,110123305,Art Appreciation
+8,801,110123306,Fundamental Drawing Techniques
+8,801,110123405,History of Ceramics and Glass
+8,801,110123501,Three-Dimensional for Product Design
+8,801,110123504,Clay Body and Glass
+8,801,110123508,Ceramics Product Design I
+8,801,110123512,Overglaze Decorating Techniques
+8,801,110123516,Art Thesis Seminar
+8,801,110123550,Marketing for Product Design
+
+8,802,040203100,General Mathematics
+8,802,110223011,Architectural Presentation
+8,802,110223012,Construction Drawing I
+8,802,110223116,Fundamentals Design
+8,802,110223131,Construction Technology I
+8,802,110223138,Building Renovation
+8,802,110223147,Landscape Architecture
+8,802,110223156,Introduction to Cost Estimation
+8,802,110223241,Architecture Seminar
+
+8,803,110313101,Communication in Business Organization
+8,803,110313104,Human Resource Management
+8,803,110313108,Business and Entrepreneurship
+8,803,110313232,Interior Design Process I
+8,803,110313238,Basic Structures, Mechanical and Electrical Systems for Buildings
+8,803,110313239,Material and Cost Estimation for Interior Design I
+8,803,110313241,Management of Design Project
+8,803,110313401,Special Project I
+
+9,901,090113101,Introduction to Tourism and Hospitality
+9,901,090113201,Tourism Management
+9,901,090113301,Hotel Management
+9,901,090113401,Hospitality Operations
+
+9,902,090213101,Industrial Business Administration
+9,902,090213201,Business Administration and Trade
+9,902,090213301,Industrial Marketing
+9,902,090213401,Trade Management

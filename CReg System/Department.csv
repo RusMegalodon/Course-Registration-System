@@ -1,0 +1,46 @@
+FacID,DepID,DepName
+1,101,Department of Electrical and Computer Engineering
+1,102,Department of Mechanical and Aerospace Engineering
+1,103,Department of Industrial Engineering
+1,104,Department of Production and Robotics Engineering
+1,105,Department of Materials Handling and Logistics Engineering
+1,106,Department of Materials and Production Technology Engineering
+1,107,Department of Civil Engineering
+1,108,Department of Instrumentation and Electrical Energy Engineering
+1,109,Department of Chemical Engineering
+2,201,Department of Teacher Training in Mechanical Engineering
+2,202,Department of Teacher Training in Electrical Engineering
+2,203,Department of Teacher Training in Civil Engineering
+2,204,Department of Computer Education
+2,205,Department of Technological Education
+2,206,Department of Technical Education Management
+3,301,Department of Mechanical Engineering Technology
+3,302,Department of Electrical Engineering Technology
+3,303,Department of Civil and Environmental Engineering Technology
+3,304,Department of Social and Applied Science
+3,305,Department of Industrial Engineering Technology
+3,306,Department of Power Engineering Technology
+3,307,Department of Electronic Engineering Technology
+3,308,Department of Information and Production Technology Management
+3,309,Department of Welding Engineering Technology
+3,310,Thai-German Pre-Engineering School
+4,401,Department of Mathematics
+4,402,Department of Industrial Chemistry
+4,403,Department of Biotechnology
+4,404,Department of Agro-Industrial Food and Environmental
+4,405,Department of Industrial Physics and Medical Instrumentation
+4,406,Department of Computer and Information Science
+4,407,Department of Applied Statistics
+5,501,Department of Industrial Business and Human Resource Development
+5,502,Department of Manufacturing and Service Industry Management
+6,601,Department of Languages
+6,602,Department of Humanities
+6,603,Department of Social Sciences
+7,701,Department of Information Technology
+7,702,Department of Information Technology Management
+7,703,Department of Digital Network and Information Security Management
+8,801,Department of Industrial Technology
+8,802,Department of Architecture
+8,803,Department of Design Management and Business Development
+9,901,Department of Business Administration in Tourism and Hospitality
+9,902,Department of Industrial Business Administration and Trade
