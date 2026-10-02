@@ -45,50 +45,107 @@ def Login():
     bt_l30.grid(row=3,columnspan=2,pady=5)
 
 def MainMenu():
-    gui.geometry("360x200")
-    RC_bt_l20 = Button(gui, text="Register Course", command=RegisterCourse)
-    RC_bt_l20.grid(row=2,column=0,padx=10,pady=5,sticky="ew")
+    gui.geometry("400x160")
 
-    DC_bt_l30 = Button(gui, text="Drop Course", command=DropCourse)
-    DC_bt_l30.grid(row=3,column=0,padx=10,pady=5,sticky="ew")
+    RC_bt_l10 = Button(gui, text="Register Course", command=RegisterCourse) #Line 1 Column 0
+    RC_bt_l10.grid(row=1,column=0,padx=10,pady=5,sticky="ew")
 
-    IF_bt_l40 = Button(gui, text="Info", command=Info)
-    IF_bt_l40.grid(row=4,column=0,padx=10,pady=5,sticky="ew")
+    DC_bt_l20 = Button(gui, text="Drop Course", command=DropCourse) #Line 2 Column 0
+    DC_bt_l20.grid(row=2,column=0,padx=10,pady=5,sticky="ew")
+
+    IF_bt_l30 = Button(gui, text="Info", command=Info) #Line 3 Column 0
+    IF_bt_l30.grid(row=3,column=0,padx=10,pady=5,sticky="ew")
+
+    global Enable_Menu_bt,Disable_Menu_bt
+    def Enable_Menu_bt():
+        RC_bt_l10["state"] = "normal"
+        DC_bt_l20["state"] = "normal"
+        IF_bt_l30["state"] = "normal"
+    def Disable_Menu_bt():
+        RC_bt_l10["state"] = "disabled"
+        DC_bt_l20["state"] = "disabled"
+        IF_bt_l30["state"] = "disabled"
 
 def RegisterCourse():
     gui.geometry("480x240")
+    global wCourse, wCourseID, SelC
     wCourse = [] #With Course From Save
+    wCourseID = [] #With Course ID From Save
+    SelC = [] #Selected Course Number List From Add
+    
+    Disable_Menu_bt() #Disable Main Menu Button
 
     with open("./Course.csv","r",encoding="utf-8") as Course_file:
         courses = list(csv.DictReader(Course_file))
+        CourseN_list = [row["CourseName"] for row in courses] #Course Name List
+        CourseID_list = [row["CourseID"] for row in courses] #Course ID List
         '''for row in courses:
-            print(row) #Check'''
-        CourseN_list = [row["CourseName"] for row in courses]
-        CourseID_list = [row["CourseID"] for row in courses]
-        '''for i in range(len(CourseN_list)):
-            print(f"{i+1}. {CourseN_list[i]} ID: {CourseID_list[i]}") #Check'''
-        listbox = Listbox(gui, selectmode="single", width=40, height=9)
-        listbox.insert(END, f"No. | Course Name")
+            print(row) #Check
         for i in range(len(CourseN_list)):
-            listbox.insert(END, f"{i+1}. {CourseN_list[i]}")
-        listbox.grid(row=1,rowspan=4,column=2,columnspan=3,sticky="nsew")
+            print(f"{i+1}. {CourseN_list[i]} ID: {CourseID_list[i]}") #Check'''
+        CList = Listbox(gui, selectmode="single", width=40, height=9)
+        CList.insert(END, f"No. | Course Name")
+        for i in range(len(CourseN_list)):
+            CList.insert(END, f"{i+1}. {CourseN_list[i]}")
+        CList.grid(row=1,rowspan=4,column=2,columnspan=3,padx=10,pady=5,sticky="nsew")
 
         def AddCourse():
-            RegC = RegCourse.get()
-            wCourse.append(RegC)
-            print(wCourse)
-            RegCourse.set("")
-        Add_bt_l55 = Button(gui, text="Add Course", command=AddCourse)
-        Add_bt_l55.grid(row=5,column=5,padx=5,pady=5,sticky="ew")
+            RegC = RegCourse.get() - 1
+            if RegC < 0 or RegC >= len(CourseN_list) or RegC in SelC:
+                print(f"Invalid Course Number (Has 1 to {len(CourseN_list)})")
+                Add_ert_l51.config(bg="red")
+            else:
+                Add_ert_l51.config(bg="lightblue")
+                wCourse.append(CourseN_list[RegC])
+                wCourseID.append(CourseID_list[RegC])
+                SelC.append(RegC)
+                print(f"Added Course: {CourseN_list[RegC]} ID: {CourseID_list[RegC]} Success") #Check
         
+        def SaveCourse():
+            with open("./Grade.csv","a+",encoding="utf-8",newline="") as Grade_file:
+                Grade_file.seek(0) #Start Reading From Top
+                Grades = list(csv.DictReader(Grade_file))
+                Save = csv.DictWriter(Grade_file, fieldnames=["StdID","CourseID","CourseName","Score","Grade"])
+                '''for i in range(len(Grades)):
+                    print(Grades[i]) #Check'''
+                for loop in range(len(wCourse)): #Check if Course Already Registered
+                    Ready_Data = {"StdID":InStdID,"CourseID":wCourseID[loop],"CourseName":wCourse[loop],"Score":"None","Grade":"None"}
+                    if Ready_Data in Grades: #If Course Already Registered
+                        print(f"Course already registered: {wCourse[loop]}") #Check
+                    else: #If Course Not Registered Yet
+                        Save.writerow(Ready_Data)
+                        print(f"Saved successfully: {wCourse[loop]}") #Check
+            wCourse.clear(),wCourseID.clear(),SelC.clear() #Reset After Save
+            print("Process Complete")
+
         def Back():
-            listbox.destroy(),Close_bt.destroy(),gui.geometry("400x200")
-    Close_bt = Button(gui, text="Close", command=Back)
-    Close_bt.grid(row=6,column=4,padx=5,pady=5,sticky="ew")
+            CList.destroy(),Close_bt_l40.destroy(),Save_bt_l50.destroy(),Add_ert_l51.destroy(),Add_bt_l54.destroy()
+            gui.geometry("400x200"),Enable_Menu_bt()
+    
+    Close_bt_l40 = Button(gui, text="Close", command=Back,bg="red") #Line 4 Column 0
+    Close_bt_l40.grid(row=4,column=0,padx=5,pady=5,sticky="ew")
+
+    Save_bt_l50 = Button(gui, text="Save", command=SaveCourse,bg="green") #Line 5 Column 0
+    Save_bt_l50.grid(row=5,column=0,padx=5,pady=5,sticky="ew")
+
+    Add_ert_l51 = Entry(gui, textvariable=RegCourse,bg="lightblue") #Line 5 Column 1-3
+    Add_ert_l51.grid(row=5,column=1,columnspan=3,padx=5,pady=5,sticky="ew")
+
+    Add_bt_l54 = Button(gui, text="Add Course", command=AddCourse) #Line 5 Column 4
+    Add_bt_l54.grid(row=5,column=4,padx=5,pady=5,sticky="ew")
 
 def DropCourse():
-    print("Test")
-
+    gui.geometry("480x240")
+    with open("./Grade.csv","r",encoding="utf-8") as Grade_file:
+        Grades = list(csv.DictReader(Grade_file))
+        Fil_StdC = [row["CourseName"] for row in Grades if row["StdID"] == InStdID] #Filter Student Course Name
+        
+        listbox = Listbox(gui, selectmode="single", width=40, height=9)
+        listbox.insert(END, f"No. | Course Name")
+        for row in range(len(Fil_StdC)):
+            listbox.insert(END, f"{row+1}. {Fil_StdC[row]}")
+        listbox.grid(row=1,rowspan=4,column=2,columnspan=3,padx=10,pady=5,sticky="nsew")
+            
 def Info():
     print("Test")
 
@@ -96,11 +153,12 @@ if __name__ == "__main__":
     gui = Tk()
     InStdID_lg = StringVar() #Input Student ID
     InPW_lg = StringVar() #Input Password
-    RegCourse = StringVar() #With From Save In Grade
+    RegCourse = IntVar() #Input Course Name From Add to Grade
+    DopCourse = IntVar() #Input Course Name From Delete from Grade
 
     gui.title("Course Registration System")
     gui.geometry("240x120"), gui.resizable(False, False)
-    Label(gui, text="CReg System", font=("TH_Sarabun", 16, "bold"), fg="orange").grid(columnspan=2,sticky="w")
+    Label(gui, text="CReg System", font=("TH_Sarabun", 16, "bold"), fg="orange").grid(row=0,column=0,columnspan=2,padx=5,pady=5,sticky="w")
     Login()
         
 gui.mainloop()

@@ -1,1 +1,4 @@
-StdID,CourseID,Score,Grade
+StdID,CourseID,CourseName,Score,Grade
+1,010113010,Electrical Circuit Theory,None,None
+1,010113011,Electrical Circuit Laboratory,None,None
+1,010113020,Electronics,None,None
