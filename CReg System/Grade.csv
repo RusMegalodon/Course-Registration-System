@@ -1,4 +1,21 @@
 StdID,CourseID,CourseName,Score,Grade
-1,010113010,Electrical Circuit Theory,None,None
 1,010113011,Electrical Circuit Laboratory,None,None
 1,010113020,Electronics,None,None
+69101001,010113011,Electrical Circuit Laboratory,82,A
+69101001,010113025,Digital Circuit and Logic Design,76,B+
+69101001,010113220,Electrical Measurement and Instrumentation,68,C+
+69101002,010113020,Electronics,91,A
+69101002,010113023,Electromagnetic Theory,73,B
+69101003,010113010,Electrical Circuit Theory,58,D+
+69101003,010113027,Microprocessors and Embedded Computer Systems,81,A
+69102001,010013121,Engineering Mechanics,67,C+
+69102001,010013321,Thermodynamics,79,B+
+69102001,010013924,Mechanical Engineering Project II,88,A
+69102002,010013106,Systematic Engineering Design,74,B
+69102002,010023405,Aerodynamics,49,F
+69103001,010913121,Maintenance Engineering,83,A
+69104001,010413316,Production Engineering,78,B+
+69104001,010413317,Production Engineering Laboratory,85,A
+69105001,010513101,Logistics and Supply Chain Management,81,A
+69901001,090113101,Introduction to Tourism and Hospitality,84,A
+69901001,090113201,Tourism Management,79,B+
